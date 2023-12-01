@@ -31,3 +31,5 @@ select e."EmployeeID", e."FirstName", e."LastName", d."DepartmentName" from empl
 select e."EmployeeID", e."FirstName", e."LastName", d."DepartmentName" from employees e left join departments d on e."DepartmentID" = d."DepartmentID" order by e."LastName";
 
 /*Encuentra todos los empleados del departamento de HR.*/
+
+select e."EmployeeID", e."FirstName", e."LastName", d."DepartmentName" from employees e inner join departments d on e."DepartmentID" = d."DepartmentID"  where d."DepartmentName"  = 'AdminDept';
